@@ -14,4 +14,10 @@ http://openaccess.thecvf.com/content_ICCV_2017/papers/Qiu_Learning_Spatio-Tempor
 
 Here is the tensorflow version.
 ## Preparing your own dataset.
-
+-----------------
+  Suppose you are about to use UCF dataset.Firstly converting videos to images is necessary.
+  To do this,you could run codes like follows:(Suppose UCF dataset is in the same directory as the code-files.)
+  *./process_video2image.sh UCF101   
+  *And next step,you should get the train.list and test.list which you would fetch afterwards for training data and test
+  *data individually:(number 5 indicates the possibility )
+  *./process_gettxt.sh UCF101 5
