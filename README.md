@@ -17,9 +17,10 @@ Here is the tensorflow version.
 Suppose you are about to use UCF dataset.Firstly converting videos to images is necessary.
 To do this,you could run codes like follows:(Suppose UCF-101 dataset is in the same directory as the code-files.)
 - **./process_video2image.sh UCF101** 
-- And next step,you should get the train.list and test.list which you would fetch afterwards for training data and testing
+- And next step,you should get the train.list and test.list which you would afterwards fetch from for training data and testing
 data individually:(number ‘5’ indicates that one-fifth of all data is testing data.)
 - **./process_gettxt.sh UCF101 5**
+
 **Note that:Due to the fact that *Relative Path* of the video clips exists in 'train.list' and 'test.list',
 So you must make sure that 'DataGenerator.py' and UCF-101 are in the same directory! or modify the codes by yourself.**
 ## Train or Eval model     
