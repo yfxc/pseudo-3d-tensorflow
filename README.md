@@ -29,4 +29,5 @@ You can also train and test model in 'tf-p3d-train_eval.ipynb' with jupyter note
 ## Others
 - You could change some model settings in 'settings.py',except the options(called 'IS_DA') for whether or not to use data augmentation in 'train.py'.
 - Changing the properties for data augmentation in 'DataAugmenter.py'
-    
+## Updates
+- Use **tf.layers.batch_normalization(training=...)** instead of tf.contrib.layers.batch_norm(is_training=...) which may lead to wrong answers when testing.
