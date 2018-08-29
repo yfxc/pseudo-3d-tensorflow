@@ -130,7 +130,7 @@ def run():
 		                    label_placeholder:train_labels})
 		        train_writer.add_summary(mer, step)
 		    if step >7000 and step % 800==0 or (step+1)==MAX_STEPS:
-		        saver.save(sess,'da_tfckp_it_{}'.format(step),global_step=step)
+		        saver.save(sess,'./TFCHKP_{}'.format(step),global_step=step)
 		    
 		print('done')   
 
