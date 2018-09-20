@@ -60,7 +60,7 @@ class Bottleneck():
         tmp_x=tf.layers.batch_normalization(tmp_x,training=IS_TRAIN)
         tmp_x=tf.nn.relu(tmp_x)
         x=convT(name+'_T',x,self.planes,self.planes)
-        x=tf.layers.batch_normalization(tmp_x,training=IS_TRAIN)
+        x=tf.layers.batch_normalization(x,training=IS_TRAIN)
         x=tf.nn.relu(x)
         return x+tmp_x
     
