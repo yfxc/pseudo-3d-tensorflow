@@ -5,7 +5,7 @@ Tensorflow implement for pseudo-3d-residual-network.
 
 |Author|yfxc|
 |---|---
-|E-mail|gez9487@163.com
+|E-mail|1512165940@qq.com
 
 ****
 ## Introduction
